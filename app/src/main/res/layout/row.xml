@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dip" >
+
+    <TextView
+        android:id="@+id/textview_ticker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TICKER"
+        android:textColor="#343434"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textview_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COMPANY"
+        android:textColor="#343434"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textview_transType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_company"
+        android:text="TRANS TYPE"
+        android:textColor="#343434"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textview_transAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TRANS AMOUNT"
+        android:textColor="#343434"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textview_pps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PPS"
+        android:textColor="#343434"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textview_orderType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ORDER TYPE"
+        android:textColor="#343434"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textview_confCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONF CODE"
+        android:textColor="#343434"
+        android:textSize="14sp" />
+
+</LinearLayout>

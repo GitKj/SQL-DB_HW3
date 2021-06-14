@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_InvestTracker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingHorizontal="70dp"
+            android:text="InvestTracker"
+            android:textColor="#1037C8"
+            android:textSize="26sp" />
+
+
+        <TextView
+            android:id="@+id/tv_AddTransaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Add Transaction"
+            android:textColor="#040404"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/tv_Ticker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="30dp"
+            android:text="Ticker"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/pt_Ticker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="-39dp"
+            android:ems="10"
+            android:inputType="textCapCharacters"
+            android:text="DIS" />
+
+
+        <TextView
+            android:id="@+id/tv_CompanyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:text="Company Name"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/pt_CompanyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="-40dp"
+            android:ems="10"
+            android:inputType="textCapWords|textCapSentences"
+            android:text="Disney" />
+
+
+        <TextView
+            android:id="@+id/tv_TransactionType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:text="Transaction Type"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+
+        <RadioGroup
+            android:id="@+id/rg_TransType"
+            android:layout_width="164dp"
+            android:layout_height="89dp"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="-28dp"
+            android:checkedButton="@id/rb_Buy">
+
+            <RadioButton
+                android:id="@+id/rb_Sale"
+                android:layout_width="73dp"
+                android:layout_height="38dp"
+                android:text="Sale" />
+
+            <RadioButton
+                android:id="@+id/rb_Buy"
+                android:layout_width="76dp"
+                android:layout_height="36dp"
+                android:text="Buy" />
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/tv_TransAmnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:text="Transaction Amnt"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_TransAmnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="-38dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="0.00" />
+
+
+        <TextView
+            android:id="@+id/tv_PPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:text="Price per Share"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_PPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="-42dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="0.00" />
+
+
+        <TextView
+            android:id="@+id/tv_TypeOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:text="Type of Order"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinner_Orders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="-23dp"
+            android:entries="@array/types_of_orders"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:id="@+id/tv_ConfCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:text="Confirmation Code"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_ConfCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="-42dp"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/button_Reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="36dp"
+            android:text="Reset"
+            android:onClick="resetValues" />
+
+        <Button
+            android:id="@+id/button_Save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="225dp"
+            android:layout_marginTop="-48dp"
+            android:onClick="submitValues"
+            android:text="Save" />
+
+        <Button
+            android:id="@+id/btn_viewDB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Database"
+            android:onClick="viewDatabase"/>
+
+        <Button
+            android:id="@+id/btn_ResetDB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset DB"
+            android:onClick="resetDatabase"/>
+
+
+    </LinearLayout>
+</ScrollView>

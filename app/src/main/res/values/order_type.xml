@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="types_of_orders">
+        <item>Choose one</item>
+        <item>Market</item>
+        <item>Limit</item>
+        <item>Stop</item>
+    </string-array>
+</resources>
